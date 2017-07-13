@@ -1,0 +1,133 @@
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset done*/
+
+.header ul {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.header li, .footer li {
+	display: inline-block;
+}
+
+.header a, .footer a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	color: #333;
+}
+
+.header a:hover, .footer a:hover {
+	text-decoration: underline;
+}
+
+
+.hero {
+	width: 565px;
+	margin: 0 auto;
+	margin-top: 200px;
+	text-align: center;
+}
+
+#logo {
+	width: 270px;
+}
+
+input {
+	margin-top: 17px;
+	width: 100%;
+	padding: 12px 20px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+#buttons {
+	margin-top: 25px;
+}
+
+button {
+	padding: 10px 15px 10px 15px;
+	border: none;
+	background-color: #f2f2f2;
+	color: #757575;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 2px;
+	border: 1px solid #ffffff;
+}
+
+button:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.footer {
+	border-top: 1px;
+	border-top-style: solid;
+	border-top-color: #ddd;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: #eee;
+}
+
+.nav-left, .nav-right {
+	padding: 0px 15px;
+}
+
+.nav-left {
+	float: left;
+}
+
+.nav-right {
+	float: right;
+}
