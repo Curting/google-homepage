@@ -44,40 +44,95 @@ table {
 }
 /* CSS reset done*/
 
+body {
+	font-family: arial,sans-serif;
+}
+
 .header ul {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	right: 50px;
 }
 
 .header li, .footer li {
 	display: inline-block;
+	position: relative;
 }
 
 .header a, .footer a {
 	display: block;
 	text-align: center;
-	padding: 14px 16px;
+	margin: 14px 16px;
 	text-decoration: none;
-	font-family: arial,sans-serif;
 	font-size: 13px;
 	color: #333;
+}
+
+.header a {
+	margin: 14px 7px;
 }
 
 .header a:hover, .footer a:hover {
 	text-decoration: underline;
 }
 
+.header li:nth-last-child(3), li:nth-last-child(2), .header li:last-child {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#boxicon {
+	width: 15px;
+	position: absolute;
+	top: 2px;
+	opacity: 0.8;
+}
+
+#boxicon:hover {
+	opacity: 1;
+}
+
+.notification {
+	height: 10px; width: 10px;
+	padding: 5px;
+	line-height: 0.80;
+	font-weight: bold;
+	background-color: #db4437;
+	color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+.notification:hover {
+	background-color: darkred;
+}
+
+#user-photo {
+	width: 32px;
+	border-radius: 100%;
+	position: absolute;
+	top: -7px;
+
+}
 
 .hero {
 	width: 565px;
 	margin: 0 auto;
 	margin-top: 200px;
 	text-align: center;
+	position: relative;
 }
 
 #logo {
 	width: 270px;
+}
+
+#country {
+	color: #4285f4;
+	position: absolute;
+	right: 140px;
+	top: 75px;
 }
 
 .search {
@@ -90,7 +145,15 @@ table {
 	background-size: 26px;
     background-position: 98% 8px;
     background-repeat: no-repeat;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #E9E9E9;
+    border-radius: 2px;
+    box-shadow: 0 1.5px 0.5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search:hover {
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+	transition: all;
+	transition-duration: 0.225s;
 }
 
 #buttons {
@@ -113,6 +176,21 @@ button:hover {
 	border: 1px solid #c6c6c6;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
+}
+
+#alt-lang {
+	margin-top: 30px;
+	font-size: 13px;
+}
+
+.lang {
+	text-decoration: none;
+	margin: 0px 4px 0px 3px;
+	color: #1a0dab;
+}
+
+.lang:hover {
+	text-decoration: underline;
 }
 
 .footer {
